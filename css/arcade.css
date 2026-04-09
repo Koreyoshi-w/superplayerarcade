@@ -1,0 +1,457 @@
+/* ============================================================
+   SUPER PLAYER ARCADE — Arcade Page Styles
+   ============================================================
+   Social, exciting, photo-worthy. Not a machine catalog.
+   Warm cream/orange system. Lifestyle-first.
+   ============================================================ */
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.arcade-hero {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 7rem 2rem 5rem;
+}
+
+.arcade-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.arcade-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arcade-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(58, 42, 26, 0.25) 0%,
+      rgba(58, 42, 26, 0.12) 30%,
+      rgba(58, 42, 26, 0.32) 70%,
+      rgba(58, 42, 26, 0.52) 100%
+    );
+}
+
+.arcade-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.arcade-hero-badge {
+  background: rgba(255, 179, 71, 0.92) !important;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.arcade-hero-title {
+  color: var(--warm-white);
+  font-size: var(--text-6xl);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  text-shadow: 0 2px 40px rgba(58, 42, 26, 0.25);
+}
+
+.arcade-hero-title em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--orange-light);
+}
+
+.arcade-hero-subline {
+  color: rgba(255, 252, 245, 0.95);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  text-shadow: 0 1px 12px rgba(58, 42, 26, 0.15);
+}
+
+.arcade-hero-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* ============================================================
+   VIBE INTRO
+   ============================================================ */
+.arcade-intro-text {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.arcade-intro-text .lead {
+  font-family: 'Fraunces', serif;
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--brown-dark);
+  line-height: 1.4;
+  margin-bottom: var(--space-xl);
+}
+
+.arcade-intro-text p {
+  font-size: var(--text-xl);
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0 auto var(--space-lg);
+}
+
+
+/* ============================================================
+   FEATURED MOMENTS — 4-card editorial grid
+   ============================================================ */
+.moments-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+}
+
+.moment-block {
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-base);
+}
+
+.moment-block:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lift);
+}
+
+.moment-block-image {
+  height: 260px;
+  overflow: hidden;
+}
+
+.moment-block-image img,
+.moment-block-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.moment-block:hover .moment-block-image img,
+.moment-block:hover .moment-block-img {
+  transform: scale(1.04);
+}
+
+.moment-block-body {
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.moment-block-emoji {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.moment-block-body h3 {
+  font-size: var(--text-2xl);
+  margin-bottom: 0.5rem;
+}
+
+.moment-block-body p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   WHAT YOU'LL FIND — experience panels
+   ============================================================ */
+.find-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.find-panel {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-base);
+}
+
+.find-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lift);
+}
+
+.find-panel-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.find-panel h4 {
+  font-size: var(--text-xl);
+  margin-bottom: 0.5rem;
+}
+
+.find-panel p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   WHY PEOPLE LOVE IT
+   ============================================================ */
+.love-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.love-item {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl) var(--space-xl);
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-base);
+}
+
+.love-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lift);
+}
+
+.love-item-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-lg);
+  display: block;
+}
+
+.love-item h4 {
+  font-size: var(--text-xl);
+  margin-bottom: 0.75rem;
+}
+
+.love-item p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   GALLERY
+   ============================================================ */
+.arcade-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: var(--space-md);
+}
+
+.ag-item {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.ag-item img,
+.arcade-gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.ag-item:hover img,
+.ag-item:hover .arcade-gallery-img {
+  transform: scale(1.05);
+}
+
+.ag-item.ag-tall {
+  grid-row: span 2;
+}
+
+.ag-item.ag-wide {
+  grid-column: span 2;
+}
+
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+.arcade-cta {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.arcade-cta h2 {
+  font-size: var(--text-5xl);
+  margin-bottom: var(--space-lg);
+}
+
+.arcade-cta p {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.arcade-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* ============================================================
+   RESPONSIVE — 1024px
+   ============================================================ */
+@media (max-width: 1024px) {
+
+  .arcade-hero-title {
+    font-size: var(--text-5xl);
+  }
+
+  .find-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .love-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .arcade-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 180px;
+  }
+}
+
+
+/* ============================================================
+   RESPONSIVE — 768px
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .arcade-hero {
+    min-height: 75vh;
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .arcade-hero-title {
+    font-size: var(--text-4xl);
+  }
+
+  .arcade-hero-subline {
+    font-size: var(--text-xl);
+  }
+
+  .arcade-intro-text .lead {
+    font-size: var(--text-2xl);
+  }
+
+  .moments-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .moment-block-image {
+    height: 220px;
+  }
+
+  .find-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .love-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  .arcade-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 160px;
+  }
+
+  .arcade-cta h2 {
+    font-size: var(--text-4xl);
+  }
+}
+
+
+/* ============================================================
+   RESPONSIVE — 480px
+   ============================================================ */
+@media (max-width: 480px) {
+
+  .arcade-hero {
+    min-height: 65vh;
+    padding: 5rem 1rem 3rem;
+  }
+
+  .arcade-hero-title {
+    font-size: var(--text-3xl);
+  }
+
+  .arcade-hero-subline {
+    font-size: var(--text-lg);
+  }
+
+  .moments-grid {
+    gap: var(--space-lg);
+  }
+
+  .moment-block-image {
+    height: 180px;
+  }
+
+  .find-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .love-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .arcade-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 140px;
+  }
+
+  .ag-item.ag-wide {
+    grid-column: span 1;
+  }
+
+  .arcade-cta h2 {
+    font-size: var(--text-3xl);
+  }
+
+  .arcade-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

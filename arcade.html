@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Arcade &mdash; Super Player Arcade</title>
+  <meta name="description" content="Claw machines, prize walls, and the kind of social energy that keeps the whole crew going. The Arcade at Super Player — where every visit ends with a win, a haul, and a story.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/arcade.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <img src="images/logo/logo-navbar.png" alt="Super Player Logo" class="logo-img">
+      </a>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="arcade.html" class="active">Arcade</a></li>
+        <li><a href="studio.html">Art &amp; Craft</a></li>
+        <li><a href="parties.html">Parties</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm">Book Now</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="arcade.html">Arcade</a>
+    <a href="studio.html">Art &amp; Craft</a>
+    <a href="parties.html">Parties</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top:1rem;">Book Now</a>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION 1 — HERO
+       ============================================================ -->
+  <section class="arcade-hero">
+    <div class="arcade-hero-bg" aria-hidden="true">
+      <img src="images/arcade/hero.jpg" alt="Friends crowded around claw machines at Super Player Arcade" class="arcade-hero-image">
+    </div>
+    <div class="arcade-hero-overlay"></div>
+
+    <div class="arcade-hero-content">
+      <span class="badge arcade-hero-badge">The Arcade</span>
+      <h1 class="arcade-hero-title">You said one try.<br><em>You meant an hour.</em></h1>
+      <p class="arcade-hero-subline">Claw machines, prize walls, and the kind of energy you don&rsquo;t walk away from.</p>
+      <div class="arcade-hero-ctas">
+        <a href="contact.html" class="btn btn-primary btn-lg">Plan Your Visit</a>
+        <a href="pricing.html#arcade" class="btn btn-light btn-lg">See Pricing</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 2 — THE VIBE
+       ============================================================ -->
+  <section class="section section-cream" id="vibe">
+    <div class="container">
+
+      <div class="arcade-intro-text fade-in">
+        <div class="accent-line" style="margin: 0 auto var(--space-xl);"></div>
+        <p class="lead">It's not about the high score. It's about the moment the claw closes &mdash; and everyone in the room holds their breath.</p>
+        <p>Super Player Arcade is built for reactions &mdash; the perfect claw drop, the scream when someone wins, the growing pile of prizes, and the group photo before you even leave. You come in for one try and leave with a haul, a story, and at least three videos on your phone.</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Wave divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="#FFF1D6"/>
+    </svg>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION 3 — FEATURED MOMENTS
+       ============================================================ -->
+  <section class="section section-alt" id="moments">
+    <div class="container">
+
+      <div class="section-heading section-heading-large fade-in">
+        <div class="accent-line"></div>
+        <h2>Two Moments You'll Recognize</h2>
+        <p>Every visit starts the same way &mdash; and somehow still feels exciting every time.</p>
+      </div>
+
+      <div class="moments-grid">
+
+        <!-- The Win -->
+        <div class="moment-block fade-in fade-in-delay-1">
+          <div class="moment-block-image">
+            <img src="images/arcade/win.jpg" alt="The winning moment at a claw machine" class="moment-block-img">
+          </div>
+          <div class="moment-block-body">
+            <span class="moment-block-emoji">&#127942;</span>
+            <h3>The Win</h3>
+            <p>That moment when it finally grabs.<br>Everyone freezes &mdash; then it lifts, and the whole room goes crazy.</p>
+          </div>
+        </div>
+
+        <!-- The Crowd -->
+        <div class="moment-block fade-in fade-in-delay-2">
+          <div class="moment-block-image">
+            <img src="images/arcade/crowd.jpg" alt="Friends crowded around a claw machine" class="moment-block-img">
+          </div>
+          <div class="moment-block-body">
+            <span class="moment-block-emoji">&#128588;</span>
+            <h3>The Crowd</h3>
+            <p>&ldquo;Left!&rdquo; &ldquo;No, right!&rdquo;<br>It starts as one turn &mdash; and becomes everyone&rsquo;s moment.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PULLQUOTE — visual rhythm break
+       ============================================================ -->
+  <div class="pullquote-section section-alt">
+    <p class="pullquote fade-in">
+      <span class="accent-word">&ldquo;One more try&rdquo;</span> &mdash; said everyone, <span class="accent-word">every time.</span>
+    </p>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION 4 — WHAT YOU'LL FIND
+       ============================================================ -->
+  <section class="section section-cream" id="find">
+    <div class="container">
+
+      <div class="section-heading fade-in">
+        <div class="accent-line"></div>
+        <h2>What You'll Find Inside</h2>
+        <p>No tokens, no complicated rules. Just walk in, load credits, and play whatever catches your eye.</p>
+      </div>
+
+      <div class="find-grid fade-in">
+
+        <div class="find-panel">
+          <span class="find-panel-icon">&#129518;</span>
+          <h4>Claw Machines</h4>
+          <p>Rows of claws loaded with plushies, figures, and surprise prizes. Every machine feels a little different &mdash; and every drop is a rush.</p>
+        </div>
+
+        <div class="find-panel">
+          <span class="find-panel-icon">&#127918;</span>
+          <h4>Arcade Games</h4>
+          <p>Classic favorites and modern picks for solo play, head-to-head competition, or just messing around with friends.</p>
+        </div>
+
+        <div class="find-panel">
+          <span class="find-panel-icon">&#127873;</span>
+          <h4>Prize Machines</h4>
+          <p>Stacker, key master, and more &mdash; real prizes, high-stakes moments, and wins that feel huge.</p>
+        </div>
+
+        <div class="find-panel">
+          <span class="find-panel-icon">&#128588;</span>
+          <h4>The Energy</h4>
+          <p>Bright, warm, and loud in the best way. Built for reactions, selfies, and fun you actually remember.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Wave divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="#FFF1D6"/>
+    </svg>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION 5 — WHY PEOPLE LOVE IT
+       ============================================================ -->
+  <section class="section section-alt" id="why">
+    <div class="container">
+
+      <div class="section-heading fade-in">
+        <div class="accent-line"></div>
+        <h2>Why People Keep Coming Back</h2>
+        <p>It's not just the prizes. It's everything around them.</p>
+      </div>
+
+      <div class="love-grid fade-in">
+
+        <div class="love-item">
+          <span class="love-item-icon">&#9889;</span>
+          <h4>Easy to Jump Into</h4>
+          <p>No reservations, no learning curve. Walk in, load credits, and start playing.</p>
+        </div>
+
+        <div class="love-item">
+          <span class="love-item-icon">&#128101;</span>
+          <h4>Better with Friends</h4>
+          <p>It starts with one person playing and turns into the whole group cheering, debating, and filming.</p>
+        </div>
+
+        <div class="love-item">
+          <span class="love-item-icon">&#127942;</span>
+          <h4>Prize-Worthy Moments</h4>
+          <p>Real prizes you actually want &mdash; plushies, figures, keychains, and surprise wins worth showing off.</p>
+        </div>
+
+        <div class="love-item">
+          <span class="love-item-icon">&#128248;</span>
+          <h4>Photo-Ready Atmosphere</h4>
+          <p>From the machines to the prize wall, everything here looks good on camera.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Wave divider -->
+  <div class="wave-divider flip">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="#FFF7E8"/>
+    </svg>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION 6 — GALLERY
+       ============================================================ -->
+  <section class="section section-cream" id="gallery">
+    <div class="container-wide" style="padding: 0 2rem;">
+
+      <div class="section-heading fade-in">
+        <div class="accent-line"></div>
+        <h2>Real Wins. Real Moments.</h2>
+        <p>This is what it actually looks like.</p>
+      </div>
+
+      <div class="arcade-gallery fade-in">
+        <div class="ag-item ag-tall">
+          <img src="images/arcade/gallery-1.jpg" alt="Claw machine close-up grab" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item">
+          <img src="images/arcade/gallery-2.jpg" alt="Group cheering around a machine" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item">
+          <img src="images/arcade/gallery-3.jpg" alt="Prize wall floor to ceiling" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item">
+          <img src="images/arcade/gallery-4.jpg" alt="Holding up the big win" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item ag-wide">
+          <img src="images/arcade/gallery-5.jpg" alt="Friends posing with full haul — plushies, keychains, and peace signs" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item">
+          <img src="images/arcade/gallery-6.jpg" alt="Stacker machine mid-game" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item ag-tall">
+          <img src="images/arcade/gallery-7.jpg" alt="Date night at the claw machines" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item">
+          <img src="images/arcade/gallery-8.jpg" alt="First prize win moment" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item">
+          <img src="images/arcade/gallery-9.jpg" alt="Prize haul flat lay" class="arcade-gallery-img">
+        </div>
+        <div class="ag-item">
+          <img src="images/arcade/gallery-10.jpg" alt="Reaction moment — someone won big" class="arcade-gallery-img">
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-2xl);" class="fade-in">
+        <p style="font-size: var(--text-lg); color: var(--brown-medium);">Tag your wins &mdash; <strong style="color: var(--brown-dark);">@superplayerarcade1820</strong> &middot; <strong style="color: var(--brown-dark);">#SuperPlayerArcade</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 7 — FINAL CTA
+       ============================================================ -->
+  <section class="section section-highlight" id="visit">
+    <div class="container">
+
+      <div class="arcade-cta fade-in">
+        <div class="accent-line" style="margin: 0 auto var(--space-xl);"></div>
+        <h2>No plans? Now you do.</h2>
+        <p>Walk in anytime for claw machines, prizes, and a night that usually lasts longer than planned.</p>
+        <div class="arcade-cta-buttons">
+          <a href="contact.html" class="btn btn-primary btn-lg">Plan Your Visit &rarr;</a>
+          <a href="pricing.html" class="btn btn-secondary btn-lg">See Pricing</a>
+          <a href="parties.html" class="btn btn-secondary btn-lg">Book a Party</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo">
+          <img src="images/logo/logo-full.png" alt="Super Player Logo" class="logo-img-footer">
+        </a>
+        <p>The place where you play, create, and take home something amazing. Claw machines, a creative studio, and unforgettable group experiences &mdash; all under one roof.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/superplayerarcade1820" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.8a1 1 0 100 2 1 1 0 000-2z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@superplayerarcade.us?_r=1&_t=ZT-95MCGL3fWwv" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 2c.5 2.5 2.5 4.5 5 5v3c-1.3 0-2.6-.3-3.7-.9v6.5a6.5 6.5 0 11-6.5-6.5c.3 0 .6 0 .9.1v3.2a3.3 3.3 0 103.3 3.3V2h1z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.2v-2.9h2.2V9.5c0-2.2 1.3-3.4 3.3-3.4.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.3v1.6h2.2l-.4 2.9h-1.8v7A10 10 0 0022 12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="arcade.html">The Arcade</a>
+        <a href="studio.html">Art &amp; Craft</a>
+        <a href="parties.html">Parties</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://maps.app.goo.gl/wRB8QpSnwKQGgAtZ9" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        <a href="parties.html">Group Bookings</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Along</h4>
+        <a href="https://www.instagram.com/superplayerarcade1820" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@superplayerarcade.us?_r=1&_t=ZT-95MCGL3fWwv" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://maps.app.goo.gl/xTA9xkn9weNh989LA" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Super Player Arcade. All rights reserved.</span>
+      <span>Play + Create + Take Home</span>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

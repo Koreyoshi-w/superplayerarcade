@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Player Arcade — Play. Create. Take Home.</title>
+  <meta name="description" content="Super Player Arcade is where claw machines, arcade games, and hands-on creative studio experiences come together. Win prizes, make art, and take home something amazing.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <img src="images/logo/logo-navbar.png" alt="Super Player Logo" class="logo-img">
+      </a>
+
+      <ul class="navbar-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="arcade.html">Arcade</a></li>
+        <li><a href="studio.html">Art &amp; Craft</a></li>
+        <li><a href="parties.html">Parties</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm">Book Now</a></li>
+      </ul>
+
+      <button class="menu-toggle" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="arcade.html">Arcade</a>
+    <a href="studio.html">Art &amp; Craft</a>
+    <a href="parties.html">Parties</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="btn btn-primary" style="margin-top: 1rem;">Book Now</a>
+  </div>
+
+
+  <!-- ============================================================
+       ACT 1 — THE SPLIT HERO (50/50) — VIDEO BACKGROUNDS
+       ============================================================ -->
+  <section class="hero-split">
+
+    <!-- LEFT: ARCADE -->
+    <div class="hero-half hero-arcade">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="images/hero/arcade-hero.jpg"
+        aria-hidden="true"
+      >
+        <source src="videos/arcade-hero.mp4" type="video/mp4">
+        <!-- Fallback: CSS gradient background handles no-video case -->
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="badge">The Arcade</span>
+        <h1>Chase the Win</h1>
+        <p class="hero-subline">Claw machines, prize walls, and the kind of "one more try" energy that keeps the whole crew going.</p>
+        <a href="arcade.html" class="btn btn-light btn-lg">Explore the Arcade &rarr;</a>
+      </div>
+    </div>
+
+    <!-- CENTER BADGE -->
+    <div class="hero-center-badge">
+      <span>Play +<br>Create +<br>Take Home</span>
+    </div>
+
+    <!-- RIGHT: CREATIVE STUDIO -->
+    <div class="hero-half hero-studio">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        poster="images/hero/studio-hero.jpg"
+        aria-hidden="true"
+      >
+        <source src="videos/studio-hero.mp4" type="video/mp4">
+        <!-- Fallback: CSS gradient background handles no-video case -->
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="badge">Art &amp; Craft Studio</span>
+        <h1>Create Something Cute</h1>
+        <p class="hero-subline">Decoden, tufting, painting, and hands-on crafts you'll actually want to show off and take home.</p>
+        <a href="studio.html" class="btn btn-warm btn-lg">Visit the Studio &rarr;</a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ============================================================
+       PULLQUOTE — visual rhythm break
+       ============================================================ -->
+  <div class="pullquote-section section-cream">
+    <p class="pullquote fade-in">
+      The only place where you <span class="accent-word">win a prize</span> and <span class="accent-word">make a masterpiece</span> on the same night.
+    </p>
+  </div>
+
+
+  <!-- ============================================================
+       ACT 2 — DISCOVER TWO WORLDS
+       ============================================================ -->
+  <section class="section section-cream" id="discover" style="padding-top: var(--space-3xl);">
+    <div class="container">
+
+      <div class="section-heading section-heading-large fade-in">
+        <div class="accent-line"></div>
+        <h2>Two Worlds. One Destination.</h2>
+        <p>Half the space is pure arcade energy. The other half is a creative studio where you make things with your hands. Pick a side — or do both.</p>
+      </div>
+
+      <div class="dual-worlds">
+
+        <!-- Arcade Panel -->
+        <div class="world-panel fade-in fade-in-delay-1">
+          <!-- Replace src with your arcade photo. Recommended: 800×640px, landscape. -->
+          <img src="images/home/arcade.jpg" alt="Arcade experience" class="world-img">
+          <div class="world-panel-body">
+            <span class="badge-soft badge" style="margin-bottom: 0.75rem;">Claw Machines + Prizes</span>
+            <h3>The Arcade</h3>
+            <p>The moment before the drop &mdash; everyone leans in. Rows of claw machines, stacked prizes, and that &ldquo;one more try&rdquo; energy you can&rsquo;t walk away from.</p>
+            <a href="arcade.html" class="btn btn-secondary btn-sm">See the Arcade &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Studio Panel -->
+        <div class="world-panel fade-in fade-in-delay-2">
+          <!-- Replace src with your studio photo. Recommended: 800×640px, landscape. -->
+          <img src="images/home/studio.jpg" alt="Creative studio experience" class="world-img">
+          <div class="world-panel-body">
+            <span class="badge-soft badge" style="margin-bottom: 0.75rem;">6 Craft Experiences</span>
+            <h3>The Creative Studio</h3>
+            <p>Pick a project. Sit down. Start creating. Decoden, tufting, painting &mdash; you&rsquo;ll leave with something you actually love.</p>
+            <a href="studio.html" class="btn btn-secondary btn-sm">Explore the Studio &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Wave divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="#FFF1D6"/>
+    </svg>
+  </div>
+
+
+  <!-- ============================================================
+       ACT 3 — EXPLORE THE STUDIO (Aspirational, Editorial)
+       ============================================================ -->
+  <section class="section section-alt" id="studio">
+    <div class="container">
+
+      <div class="section-heading section-heading-large fade-in">
+        <div class="accent-line"></div>
+        <h2>Find Your Kind of Creative</h2>
+        <p>Zero experience needed. Just pick what catches your eye, sit down, and start making. You'll leave with something handmade — and a story about how you made it.</p>
+      </div>
+
+      <!-- Activity 1: Cream Glue / Decoden -->
+      <div class="activity-feature fade-in">
+        <div class="activity-feature-image">
+          <img src="images/studio/decoden.jpg" alt="Cream glue and decoden craft" class="activity-img">
+        </div>
+        <div class="activity-feature-content">
+          <span class="badge">Most Popular</span>
+          <h3>Cream Glue &amp; Decoden</h3>
+          <div class="activity-tagline">The one everyone posts on Instagram.</div>
+          <p>Pick a phone case, mirror, or compact. Load up on charms, cabochons, and cream glue. Squeeze, layer, arrange, and sparkle until it's so extra your friends won't believe you made it yourself. The perfect date activity, girls' night project, or solo creative session.</p>
+          <a href="studio.html#decoden" class="btn btn-primary btn-sm">Try Decoden &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Activity 2: Plaster Painting -->
+      <div class="activity-feature reverse fade-in">
+        <div class="activity-feature-image">
+          <img src="images/studio/plaster.jpg" alt="Plaster painting activity" class="activity-img">
+        </div>
+        <div class="activity-feature-content">
+          <span class="badge-outline badge">Relaxing</span>
+          <h3>Plaster Painting</h3>
+          <div class="activity-tagline">Cute figures. Your colors. Take it home.</div>
+          <p>Choose from dozens of plaster figures — animals, characters, seasonal shapes. Pick your palette and paint at your own pace. It's the kind of calm, focused fun that melts away everything else. Makes a perfect gift or a little shelf piece you'll actually keep forever.</p>
+          <a href="studio.html#plaster" class="btn btn-primary btn-sm">Try Painting &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Activity 3: Tufting -->
+      <div class="activity-feature coming-soon fade-in">
+        <div class="activity-feature-image">
+          <img src="images/studio/tufting.jpg" alt="Tufting activity" class="activity-img">
+        </div>
+        <div class="activity-feature-content">
+          <span class="badge">Fan Favorite</span>
+          <h3>Tufting</h3>
+          <span class="badge badge-coming">Coming Soon</span>
+          <div class="activity-tagline">Design your own rug and bring it to life — one loop at a time.</div>
+          <p>Design your own rug and bring it to life — one loop at a time.</p>
+          <button class="btn btn-secondary btn-sm" disabled>Coming Soon</button>
+        </div>
+      </div>
+
+      <!-- Activity 4: Fluid Bear -->
+      <div class="activity-feature reverse coming-soon fade-in">
+        <div class="activity-feature-image">
+          <img src="images/studio/fluid-bear.jpg" alt="Fluid bear painting activity" class="activity-img">
+        </div>
+        <div class="activity-feature-content">
+          <span class="badge-outline badge">Mesmerizing</span>
+          <h3>Fluid Bear</h3>
+          <span class="badge badge-coming">Coming Soon</span>
+          <div class="activity-tagline">Pour, tilt, and watch colors flow into something completely unique.</div>
+          <p>Pour, tilt, and watch colors flow into something completely unique.</p>
+          <button class="btn btn-secondary btn-sm" disabled>Coming Soon</button>
+        </div>
+      </div>
+
+      <!-- Activity 5: Bracelet & Keychain -->
+      <div class="activity-feature coming-soon fade-in">
+        <div class="activity-feature-image">
+          <img src="images/studio/bracelet.jpg" alt="Bracelet and keychain making activity" class="activity-img">
+        </div>
+        <div class="activity-feature-content">
+          <span class="badge-outline badge">Great for Groups</span>
+          <h3>Bracelets &amp; Keychains</h3>
+          <span class="badge badge-coming">Coming Soon</span>
+          <div class="activity-tagline">Mix, match, and create something small but personal.</div>
+          <p>Mix, match, and create something small but personal.</p>
+          <button class="btn btn-secondary btn-sm" disabled>Coming Soon</button>
+        </div>
+      </div>
+
+      <!-- Activity 6: Patch / Fabric DIY -->
+      <div class="activity-feature reverse coming-soon fade-in">
+        <div class="activity-feature-image">
+          <img src="images/studio/patch.jpg" alt="Patch and fabric DIY activity" class="activity-img">
+        </div>
+        <div class="activity-feature-content">
+          <span class="badge-outline badge">New</span>
+          <h3>Patch &amp; Fabric DIY</h3>
+          <span class="badge badge-coming">Coming Soon</span>
+          <div class="activity-tagline">Turn everyday items into something that feels like you.</div>
+          <p>Turn everyday items into something that feels like you.</p>
+          <button class="btn btn-secondary btn-sm" disabled>Coming Soon</button>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-3xl);" class="fade-in">
+        <a href="studio.html" class="btn btn-secondary btn-lg">See All Studio Experiences &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       PULLQUOTE — visual rhythm break before arcade
+       ============================================================ -->
+  <div class="pullquote-section section-alt">
+    <p class="pullquote fade-in">
+      <span class="accent-word">Play</span> it, <span class="accent-word">make</span> it, <span class="accent-word">take it home.</span>
+    </p>
+  </div>
+
+
+  <!-- Wave divider -->
+  <div class="wave-divider flip">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,30 C360,60 720,0 1080,30 C1260,45 1380,20 1440,30 L1440,60 L0,60 Z" fill="#FFF1D6"/>
+    </svg>
+  </div>
+
+
+  <!-- ============================================================
+       ACT 4 — (merged into gallery below)
+       ============================================================ -->
+
+
+  <!-- ============================================================
+       ACT 5 — IMAGINE: PARTIES & GROUPS
+       ============================================================ -->
+  <section class="section section-highlight" id="parties">
+    <div class="container">
+
+      <div class="section-heading fade-in">
+        <div class="accent-line"></div>
+        <h2>Bring Your Whole Crew</h2>
+        <p>Birthday parties, team outings, date nights, friend groups — we'll set everything up. You just show up and have the best time.</p>
+      </div>
+
+      <div class="party-features fade-in">
+        <div class="party-feature-item">
+          <div class="party-feature-icon">&#127881;</div>
+          <h4>Private Party Rooms</h4>
+          <p>Dedicated space for your group with decorations, food options, and everything ready when you walk in the door.</p>
+        </div>
+
+        <div class="party-feature-item">
+          <div class="party-feature-icon">&#127912;</div>
+          <h4>Arcade + Studio Combos</h4>
+          <p>Win prizes at the claw machines, then head to the studio to make something together. Play, create, take home — in one party.</p>
+        </div>
+
+        <div class="party-feature-item">
+          <div class="party-feature-icon">&#128101;</div>
+          <h4>Any Size, Any Budget</h4>
+          <p>Intimate friend dates, full birthday bashes, corporate team days. Custom packages that flex to fit your crew.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center;" class="fade-in">
+        <a href="parties.html" class="btn btn-primary btn-lg">Plan a Party &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ACT 6 — TRUST: GUEST GALLERY
+       ============================================================ -->
+  <section class="section section-cream" id="gallery">
+    <div class="container-wide" style="padding: 0 2rem;">
+
+      <div class="section-heading fade-in">
+        <div class="accent-line"></div>
+        <h2>Real Guests. Real Creations. Real Wins.</h2>
+        <p>What it actually feels like.</p>
+      </div>
+
+      <div class="gallery-mosaic fade-in">
+        <div class="gallery-item tall">
+          <img src="images/gallery/decoden.jpg" alt="Sparkly decoden phone case creation" class="gallery-img">
+          <div class="gallery-label">The Haul</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/claw-win.jpg" alt="Claw machine win moment" class="gallery-img">
+          <div class="gallery-label">The Win</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/painted-plaster.jpg" alt="Painted plaster figure" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/friends-haul.jpg" alt="Friends posing with their prize haul" class="gallery-img">
+          <div class="gallery-label">The Post</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/tufting.jpg" alt="Tufted rug in progress" class="gallery-img">
+        </div>
+        <div class="gallery-item wide">
+          <img src="images/gallery/prize-wall.jpg" alt="Group at the prize wall" class="gallery-img">
+          <div class="gallery-label">The Hype</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/fluid-bear.jpg" alt="Marbled fluid bear creation" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/bracelet.jpg" alt="Beaded bracelet making session" class="gallery-img">
+        </div>
+        <div class="gallery-item tall">
+          <img src="images/gallery/tote.jpg" alt="Custom patched tote bag" class="gallery-img">
+        </div>
+        <div class="gallery-item">
+          <img src="images/gallery/party.jpg" alt="Birthday party group shot" class="gallery-img">
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: var(--space-2xl);" class="fade-in">
+        <p style="font-size: var(--text-lg); color: var(--brown-medium);">Follow us <strong style="color: var(--brown-dark);">@superplayerarcade1820</strong> &middot; Tag your moments with <strong style="color: var(--brown-dark);">#SuperPlayerArcade</strong></p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ACT 7 — PLAN: VISIT US
+       ============================================================ -->
+  <section class="section section-alt" id="visit">
+    <div class="container">
+
+      <div class="section-heading fade-in">
+        <div class="accent-line"></div>
+        <h2>Come Hang Out</h2>
+        <p>Walk-ins always welcome. Bring friends, bring family, bring yourself. Walk in anytime. Stay as long as you want.</p>
+      </div>
+
+      <div class="visit-grid fade-in">
+
+        <div class="visit-info">
+          <div class="visit-detail">
+            <span class="visit-detail-icon">&#128205;</span>
+            <div class="visit-detail-text">
+              <strong>Location</strong>
+              <span>1820 Coit Rd, Suite 125<br>Plano, TX 75075</span>
+            </div>
+          </div>
+
+          <div class="visit-detail">
+            <span class="visit-detail-icon">&#128336;</span>
+            <div class="visit-detail-text">
+              <strong>Hours</strong>
+              <span>Mon–Thu: 12pm – 11pm<br>Fri–Sat: 11am – 12am<br>Sun: 11am – 11pm</span>
+            </div>
+          </div>
+
+          <div class="visit-detail">
+            <span class="visit-detail-icon">&#128222;</span>
+            <div class="visit-detail-text">
+              <strong>Contact</strong>
+              <span>(318) 533-3517<br>superplayerarcade1820@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="visit-buttons">
+            <a href="https://maps.app.goo.gl/hKzncqHVwgjjL14ZA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Get Directions</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="visit-map">
+          <a href="https://maps.app.goo.gl/hKzncqHVwgjjL14ZA" target="_blank" rel="noopener noreferrer" class="map-card">
+            <iframe
+              src="https://www.google.com/maps?q=1820+Coit+Rd+Suite+125+Plano+TX+75075&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Super Player Arcade location"
+            ></iframe>
+            <div class="map-overlay">Open in Maps &rarr;</div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo">
+          <img src="images/logo/logo-full.png" alt="Super Player Logo" class="logo-img-footer">
+        </a>
+        <p>The place where you play, create, and take home something amazing. Claw machines, a creative studio, and unforgettable group experiences — all under one roof.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/superplayerarcade1820" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.8a1 1 0 100 2 1 1 0 000-2z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@superplayerarcade.us?_r=1&_t=ZT-95MCGL3fWwv" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 2c.5 2.5 2.5 4.5 5 5v3c-1.3 0-2.6-.3-3.7-.9v6.5a6.5 6.5 0 11-6.5-6.5c.3 0 .6 0 .9.1v3.2a3.3 3.3 0 103.3 3.3V2h1z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.2v-2.9h2.2V9.5c0-2.2 1.3-3.4 3.3-3.4.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.3v1.6h2.2l-.4 2.9h-1.8v7A10 10 0 0022 12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="arcade.html">The Arcade</a>
+        <a href="studio.html">Art &amp; Craft</a>
+        <a href="parties.html">Parties</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://maps.app.goo.gl/wRB8QpSnwKQGgAtZ9" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        <a href="#">Group Bookings</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow Along</h4>
+        <a href="https://www.instagram.com/superplayerarcade1820" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@superplayerarcade.us?_r=1&_t=ZT-95MCGL3fWwv" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://maps.app.goo.gl/94XYhCibA2AoW1wz7" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 Super Player Arcade. All rights reserved.</span>
+      <span>Play + Create + Take Home</span>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

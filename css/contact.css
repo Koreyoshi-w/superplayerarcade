@@ -1,0 +1,400 @@
+/* ============================================================
+   SUPER PLAYER ARCADE — Contact Page Styles
+   ============================================================
+   Simple, clean, inviting. Focused on real-world action.
+   ============================================================ */
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.contact-hero {
+  min-height: 48vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 8rem 2rem 5rem;
+  background: var(--bg-alt);
+}
+
+.contact-hero h1 {
+  font-size: var(--text-6xl);
+  margin-bottom: 0.5rem;
+}
+
+/* ADDED: "No plans? Now you do." eyebrow line */
+.contact-hero-eyebrow {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: var(--text-2xl);
+  color: var(--brown-light);
+  margin-bottom: 1rem;
+}
+
+.contact-hero-sub {
+  font-size: var(--text-xl);
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+
+/* ============================================================
+   WALK-IN NOTE — conversion badge above info layout
+   ============================================================ */
+
+/* ADDED: subtle walk-in conversion note */
+.contact-walkin-note {
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--brown-medium);
+  background: var(--accent-soft);
+  display: table;   /* shrink-wraps like inline-block but centers with margin:auto */
+  padding: 0.45rem 1.25rem;
+  border-radius: var(--radius-pill);
+  margin: 0 auto var(--space-2xl);
+  letter-spacing: 0.01em;
+}
+
+
+/* ============================================================
+   MAP TAGLINE — emotional line above the map frame
+   ============================================================ */
+
+/* ADDED: "We're right here. Easy to find. Hard to leave." */
+.contact-map-tagline {
+  font-family: 'Fraunces', serif;
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--brown-dark);
+  line-height: 1.4;
+  margin-bottom: var(--space-lg);
+}
+
+.contact-map-tagline em {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--brown-light);
+}
+
+
+/* ============================================================
+   INFO LAYOUT — 2-column: details left, map right
+   ============================================================ */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  max-width: 1060px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* Left column — info blocks */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+
+.contact-block {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: flex-start;
+}
+
+.contact-block-icon {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background: var(--accent-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.contact-block-text h3 {
+  font-size: var(--text-xl);
+  margin-bottom: 0.25rem;
+}
+
+.contact-block-text p {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-block-text a {
+  color: var(--accent-hover);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-block-text a:hover {
+  color: var(--brown-dark);
+}
+
+/* Hours table */
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem 0;
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  border-bottom: 1px solid rgba(169, 138, 106, 0.08);
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-list .hours-day {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.hours-list .hours-time {
+  color: var(--text-secondary);
+}
+
+/* Directions button */
+.contact-directions-btn {
+  margin-top: var(--space-md);
+}
+
+
+/* Right column — map */
+.contact-map-frame {
+  background: var(--bg-card);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  border: 3px solid rgba(169, 138, 106, 0.1);
+  min-height: 460px;
+}
+
+.contact-map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 460px;
+  border: none;
+}
+
+.contact-map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 460px;
+  background:
+    linear-gradient(135deg,
+      var(--cream-warm) 0%,
+      var(--cream) 40%,
+      var(--cream-light) 70%,
+      var(--cream-warm) 100%
+    );
+  color: var(--brown-light);
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--text-base);
+  text-align: center;
+  padding: var(--space-2xl);
+  gap: 0.5rem;
+}
+
+.contact-map-placeholder .map-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+.contact-map-placeholder .map-label {
+  font-weight: 600;
+  color: var(--brown-medium);
+}
+
+.contact-map-placeholder .map-hint {
+  font-size: var(--text-sm);
+  color: var(--brown-light);
+  max-width: 300px;
+}
+
+
+/* ============================================================
+   SOCIAL STRIP
+   ============================================================ */
+.social-strip {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.social-strip h3 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-lg);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-xl);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--brown-dark);
+  text-decoration: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg-card);
+  box-shadow: var(--shadow-soft);
+  transition: all var(--transition-base);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+  color: var(--accent-hover);
+}
+
+.social-link-icon {
+  font-size: 1.3rem;
+}
+
+
+/* ============================================================
+   FINAL CTA — button micro-animation enhancement
+   ============================================================ */
+
+/* ADDED: slightly stronger hover lift on contact page CTAs */
+.contact-cta-buttons .btn {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+.contact-cta-buttons .btn:hover {
+  transform: translateY(-4px) scale(1.025);
+}
+
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+.contact-cta {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-cta h2 {
+  font-size: var(--text-5xl);
+  margin-bottom: var(--space-lg);
+}
+
+.contact-cta p {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.contact-cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+/* ============================================================
+   RESPONSIVE — 768px
+   ============================================================ */
+@media (max-width: 768px) {
+
+  .contact-hero {
+    min-height: 40vh;
+    padding: 6rem 1.5rem 4rem;
+  }
+
+  .contact-hero h1 {
+    font-size: var(--text-4xl);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .contact-map-frame,
+  .contact-map-frame iframe,
+  .contact-map-placeholder {
+    min-height: 320px;
+  }
+
+  .social-links {
+    gap: var(--space-md);
+  }
+
+  .contact-cta h2 {
+    font-size: var(--text-4xl);
+  }
+}
+
+
+/* ============================================================
+   RESPONSIVE — 480px
+   ============================================================ */
+@media (max-width: 480px) {
+
+  .contact-hero {
+    padding: 5rem 1rem 3rem;
+  }
+
+  .contact-hero h1 {
+    font-size: var(--text-3xl);
+  }
+
+  .contact-block {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .contact-map-frame,
+  .contact-map-frame iframe,
+  .contact-map-placeholder {
+    min-height: 260px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-cta h2 {
+    font-size: var(--text-3xl);
+  }
+
+  .contact-cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
