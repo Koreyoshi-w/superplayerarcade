@@ -755,6 +755,61 @@
 
 
 /* ============================================================
+   TERMS BOX
+   ============================================================ */
+.terms-box {
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: #f8f4ee;
+  border: 1px solid rgba(169, 138, 106, 0.2);
+  border-radius: 12px;
+}
+
+.terms-note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 0.4rem;
+}
+
+.terms-title {
+  font-family: 'Fraunces', serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--brown-medium, #7a5c3a);
+  margin: 0 0 0.85rem;
+}
+
+.terms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.terms-list li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  padding-left: 1.1rem;
+  position: relative;
+}
+
+.terms-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--brown-light);
+  font-size: 0.85rem;
+}
+
+
+/* ============================================================
    CLOSING STRIP
    ============================================================ */
 .closing-strip {
