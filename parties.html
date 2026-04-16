@@ -424,16 +424,23 @@
                 <input type="text" id="f-name" name="name" placeholder="Sarah Kim" required autocomplete="name">
               </div>
               <div class="form-field">
-                <label for="f-phone">Phone Number <span class="form-req">*</span></label>
-                <input type="tel" id="f-phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
+                <label for="f-email">Email Address <span class="form-req">*</span></label>
+                <input type="email" id="f-email" name="email" placeholder="you@example.com" required autocomplete="email">
               </div>
             </div>
 
             <div class="form-row-two">
               <div class="form-field">
+                <label for="f-phone">Phone Number <span class="form-req">*</span></label>
+                <input type="tel" id="f-phone" name="phone" placeholder="(555) 000-0000" required autocomplete="tel">
+              </div>
+              <div class="form-field">
                 <label for="f-date">Preferred Date <span class="form-req">*</span></label>
                 <input type="date" id="f-date" name="date" required>
               </div>
+            </div>
+
+            <div class="form-row-two">
               <div class="form-field">
                 <label for="f-guests">Number of Guests <span class="form-req">*</span></label>
                 <select id="f-guests" name="guests" required>
@@ -444,17 +451,16 @@
                   <option value="25+">25+ guests</option>
                 </select>
               </div>
-            </div>
-
-            <div class="form-field">
-              <label for="f-age">Age Range</label>
-              <select id="f-age" name="age">
-                <option value="" disabled selected>Select age range</option>
-                <option value="kids">Kids</option>
-                <option value="teens">Teens</option>
-                <option value="mixed">Mixed Ages</option>
-                <option value="adults">Adults</option>
-              </select>
+              <div class="form-field">
+                <label for="f-age">Age Range</label>
+                <select id="f-age" name="age">
+                  <option value="" disabled selected>Select age range</option>
+                  <option value="kids">Kids</option>
+                  <option value="teens">Teens</option>
+                  <option value="mixed">Mixed Ages</option>
+                  <option value="adults">Adults</option>
+                </select>
+              </div>
             </div>
 
             <div class="form-field">
@@ -470,15 +476,27 @@
               </select>
             </div>
 
-            <div class="form-field">
-              <label for="f-package">Package you're interested in</label>
-              <select id="f-package" name="package">
-                <option value="" disabled selected>Choose a package</option>
-                <option value="party-package">Party Package — Up to 10 kids ($399)</option>
-                <option value="arcade-craft-party">Arcade + Craft Party — Up to 25 kids ($899) ⭐</option>
-                <option value="gold-package">Gold Package — Up to 20 kids ($599)</option>
-                <option value="custom">Not sure — send me a custom quote</option>
-              </select>
+            <div class="form-row-two">
+              <div class="form-field">
+                <label for="f-package">Package you're interested in</label>
+                <select id="f-package" name="package">
+                  <option value="" disabled selected>Choose a package</option>
+                  <option value="party-package">Party Package — Up to 10 kids ($399)</option>
+                  <option value="arcade-craft-party">Arcade + Craft Party — Up to 25 kids ($899) ⭐</option>
+                  <option value="gold-package">Gold Package — Up to 20 kids ($599)</option>
+                  <option value="custom">Not sure — send me a custom quote</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="f-package-choice">Which experience do you want?</label>
+                <select id="f-package-choice" name="package_choice">
+                  <option value="" disabled selected>Choose an experience</option>
+                  <option value="arcade-party">Arcade Party</option>
+                  <option value="craft-party">Craft Party</option>
+                  <option value="arcade-craft">Arcade + Craft</option>
+                  <option value="not-sure">Not sure yet</option>
+                </select>
+              </div>
             </div>
 
             <div class="form-field">
