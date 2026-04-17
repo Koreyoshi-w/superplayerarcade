@@ -59,11 +59,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function getErrorText(field) {
     const id = field.id;
     const msgs = {
-      'f-name':   'Please enter your name.',
-      'f-email':  'Please enter a valid email address.',
-      'f-phone':  'Please enter a phone number so we can reach you.',
-      'f-date':   'Please choose a date for your party.',
-      'f-guests': 'Please let us know how many guests.',
+      'f-name':           'Please enter your name.',
+      'f-email':          'Please enter a valid email address.',
+      'f-phone':          'Please enter a phone number so we can reach you.',
+      'f-date':           'Please choose a date for your party.',
+      'f-guests':         'Please let us know how many kids will be attending.',
+      'f-package-choice': 'Please choose which experience you want.',
     };
     return msgs[id] || 'This field is required.';
   }

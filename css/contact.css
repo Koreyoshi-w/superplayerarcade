@@ -178,6 +178,18 @@
   margin-top: var(--space-md);
 }
 
+.contact-directions-btn.btn,
+.contact-directions-btn.btn:visited,
+.contact-directions-btn.btn:hover,
+.contact-directions-btn.btn:focus {
+  color: #4a3426;
+}
+
+.contact-directions-btn.btn:hover {
+  background: #ee9f2f;
+  color: #3f2d21;
+}
+
 
 /* Right column — map */
 .contact-map-frame {
@@ -295,6 +307,14 @@
 
 .contact-cta-buttons .btn:hover {
   transform: translateY(-4px) scale(1.025);
+}
+
+/* Explicit text color for primary buttons on contact page — prevents
+   browser link-color inheritance from washing out text on orange bg */
+.contact-cta-buttons .btn-primary,
+.contact-cta-buttons .btn-primary:hover,
+.contact-cta-buttons .btn-primary:visited {
+  color: #4a3426;
 }
 
 
