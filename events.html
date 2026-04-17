@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events &mdash; Super Player Arcade</title>
+  <meta name="description" content="Grand openings, pop-ups, DIY weekends, and seasonal events at Super Player Arcade. Something fun is always happening here.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <img src="images/logo/logo-navbar.png" alt="Super Player Logo" class="logo-img">
+      </a>
+      <ul class="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="arcade.html">Arcade</a></li>
+        <li><a href="studio.html">Craft Studio</a></li>
+        <li><a href="parties.html">Parties</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="parties.html#party-form" class="btn btn-primary btn-sm">Book Now</a></li>
+      </ul>
+      <button class="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="arcade.html">Arcade</a>
+    <a href="studio.html">Craft Studio</a>
+    <a href="parties.html">Parties</a>
+    <a href="events.html">Events</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="parties.html#party-form" class="btn btn-primary" style="margin-top:1rem;">Book Now</a>
+  </div>
+
+
+  <!-- ============================================================
+       SECTION 1 — HERO (rotating banner carousel)
+       Each slide is self-contained in markup — swap images, text,
+       or CTAs per-slide without touching the carousel logic.
+       ============================================================ -->
+  <section class="events-hero-section">
+    <div class="container">
+
+      <div class="event-carousel" data-autoplay="4000" aria-roledescription="carousel" aria-label="Featured events">
+        <div class="event-carousel-viewport">
+          <div class="event-carousel-track">
+
+            <!-- Slide 1 — Grand Opening Celebration -->
+            <article class="event-slide" role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
+              <img src="images/events/grand-opening.jpg" alt="Grand Opening Celebration at Super Player Arcade" class="event-slide-img">
+              <div class="event-slide-overlay"></div>
+              <div class="event-slide-content">
+
+                <!-- Announcement pill — mirrors homepage banner, scaled for carousel -->
+                <div class="event-slide-opening-pill">
+                  <span class="event-slide-opening-text">Now in Soft Opening, Grand Opening &mdash; May&nbsp;9 ✨</span>
+                </div>
+
+                <span class="event-slide-badge badge-featured">Featured</span>
+                <h1 class="event-slide-title">Grand Opening Celebration</h1>
+                <p class="event-slide-desc">Official opening fun, arcade energy, creative moments, and special surprises.</p>
+                <a href="#featured-event" class="btn btn-primary btn-lg event-slide-cta">Explore Events &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Slide 2 — Weekday Special (swap image: images/events/weekday-special.jpg) -->
+            <article class="event-slide event-slide-weekday" role="group" aria-roledescription="slide" aria-label="Slide 2 of 3" aria-hidden="true">
+              <img src="images/events/weekday-special.jpg" alt="Weekday Special — 15% off all craft studio experiences at Super Player Arcade" class="event-slide-img">
+              <div class="event-slide-overlay"></div>
+              <div class="event-slide-content">
+                <span class="event-slide-badge badge-weekday">Weekday Deal</span>
+                <h2 class="event-slide-title"><span class="slide-discount">15% Off</span> Craft Studio</h2>
+                <p class="event-slide-meta">Monday &amp; Tuesday Only</p>
+                <p class="event-slide-desc">Weekday special on all craft studio experiences &mdash; including plaster painting, cream glue (decoden), and more. Minimum $30 purchase required.</p>
+                <a href="studio.html" class="btn btn-primary btn-lg event-slide-cta">Explore Craft Studio &rarr;</a>
+              </div>
+            </article>
+
+            <!-- Slide 3 — Pop-Up Events Preview (swap image: images/events/popup-events.jpg) -->
+            <article class="event-slide event-slide-popup" role="group" aria-roledescription="slide" aria-label="Slide 3 of 3" aria-hidden="true">
+              <img src="images/events/popup-events.jpg" alt="Pop-up vendor events at Super Player Arcade" class="event-slide-img">
+              <div class="event-slide-overlay"></div>
+              <div class="event-slide-content">
+
+                <span class="event-slide-badge badge-popup">Pop-Up Events</span>
+                <h2 class="event-slide-title">Upcoming Pop-Up Events</h2>
+
+                <!-- Mini event card schedule — two upcoming pop-ups -->
+                <div class="popup-events-list" aria-label="Upcoming pop-up schedule">
+
+                  <div class="popup-event-item">
+                    <div class="popup-event-info">
+                      <span class="popup-event-name">Tokicha</span>
+                      <span class="popup-event-time">12pm &ndash; 5pm</span>
+                      <span class="popup-event-ig">@tokicha.c0</span>
+                    </div>
+                    <div class="popup-event-date" aria-label="April 18">
+                      <span class="popup-event-month">APR</span>
+                      <span class="popup-event-day">18</span>
+                    </div>
+                  </div>
+
+                  <div class="popup-event-item">
+                    <div class="popup-event-info">
+                      <span class="popup-event-name">Kizuna Kafe</span>
+                      <span class="popup-event-time">12pm &ndash; 4pm</span>
+                      <span class="popup-event-ig">@kizunakafe</span>
+                    </div>
+                    <div class="popup-event-date" aria-label="April 19">
+                      <span class="popup-event-month">APR</span>
+                      <span class="popup-event-day">19</span>
+                    </div>
+                  </div>
+
+                </div><!-- /popup-events-list -->
+
+                <a href="events.html" class="btn btn-primary btn-lg event-slide-cta">View All Events &rarr;</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Arrow controls -->
+        <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous slide">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next slide">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Dot indicators -->
+        <div class="carousel-dots" role="tablist" aria-label="Choose slide">
+          <button class="carousel-dot active" type="button" data-index="0" role="tab" aria-selected="true" aria-label="Go to slide 1"></button>
+          <button class="carousel-dot" type="button" data-index="1" role="tab" aria-selected="false" aria-label="Go to slide 2"></button>
+          <button class="carousel-dot" type="button" data-index="2" role="tab" aria-selected="false" aria-label="Go to slide 3"></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 2 — FEATURED EVENT (Grand Opening Celebration)
+       ============================================================ -->
+  <section class="section" id="featured-event">
+    <div class="container">
+
+      <div class="featured-event fade-in">
+
+        <!-- LEFT: Text -->
+        <div class="featured-event-text">
+          <span class="featured-label">Featured Event</span>
+          <h2>Grand Opening Specials</h2>
+          <p class="event-date-tag">Now in Soft Opening &nbsp;&middot;&nbsp; Grand Opening &mdash; May&nbsp;9 ✨</p>
+          <p>Join us for opening-day offers, free gifts, and fun raffle prizes while supplies last.</p>
+
+          <ul class="featured-event-list">
+            <li>Single recharge of $55+ &rarr; free stress relief button</li>
+            <li>Single recharge of $100+ &rarr; free canvas bag + stress relief button</li>
+            <li>Any purchase + follow our official Instagram &rarr; free scented sachet</li>
+            <li>Needoh, Pok&eacute;mon cards, and more available through raffle tickets</li>
+          </ul>
+
+          <div class="featured-event-buttons">
+            <a href="contact.html" class="btn btn-primary btn-lg">Plan Your Visit</a>
+            <a href="https://www.instagram.com/superplayerarcade" class="btn btn-secondary btn-lg" target="_blank" rel="noopener">Follow Us on Instagram</a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Image — lively party/crowd energy; different from carousel Slide 1 -->
+        <div class="featured-event-image">
+          <span class="featured-event-image-badge">Grand Opening</span>
+          <img src="images/events/opening.jpg" alt="Grand Opening event at Super Player Arcade">
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 3 — UPCOMING EVENTS (3-card grid)
+       ============================================================ -->
+  <section class="section section-cream">
+    <div class="container">
+
+      <div class="section-heading fade-in">
+        <div class="accent-line" style="margin: 0 auto var(--space-lg);"></div>
+        <h2>More to look forward to</h2>
+        <p>We&rsquo;re always planning new ways to play, create, and celebrate. Here&rsquo;s what&rsquo;s next.</p>
+      </div>
+
+      <div class="events-grid fade-in">
+
+        <!-- Card 1 — Grand Opening Celebration -->
+        <article class="event-card">
+          <div class="event-card-image">
+            <span class="event-card-tag tag-featured">Featured</span>
+            <img src="images/events/grand-opening.jpg" alt="Grand Opening Celebration at Super Player Arcade">
+          </div>
+          <div class="event-card-body">
+            <h3>Grand Opening Celebration</h3>
+            <p>A full day of arcade energy, creative studio tables, and little surprises to mark the start of something fun.</p>
+            <a href="#featured-event" class="event-card-cta">Learn More &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Card 2 — Weekday Special -->
+        <article class="event-card">
+          <div class="event-card-image">
+            <span class="event-card-tag tag-weekday">Weekday Deal</span>
+            <img src="images/events/weekday-special.jpg" alt="Weekday Special — 15% off craft studio experiences">
+          </div>
+          <div class="event-card-body">
+            <h3>Weekday Special</h3>
+            <p>15% off all craft studio experiences on Monday and Tuesday, including plaster painting, cream glue (decoden), and more. Minimum $30 purchase required.</p>
+            <a href="studio.html" class="event-card-cta">Explore Craft Studio &rarr;</a>
+          </div>
+        </article>
+
+        <!-- Card 3 — Pop-Up Events -->
+        <article class="event-card">
+          <div class="event-card-image">
+            <span class="event-card-tag tag-popup">Pop-Up Events</span>
+            <img src="images/events/popup-events.jpg" alt="Pop-up vendor events at Super Player Arcade">
+          </div>
+          <div class="event-card-body">
+            <h3>Upcoming Pop-Up Events</h3>
+            <p>Catch upcoming pop-ups featuring Tokicha on April&nbsp;18 and Kizuna Kafe on April&nbsp;19, plus more limited-time collaborations and special guest events.</p>
+            <a href="events.html" class="event-card-cta">View Events &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 4 — EVENT PHOTO STRIP
+       ============================================================ -->
+  <section class="section section-cream">
+    <div class="container">
+
+      <div class="section-heading fade-in">
+        <div class="accent-line" style="margin: 0 auto var(--space-lg);"></div>
+        <h2>Snapshots from the fun</h2>
+        <p>A peek at the moments, makes, and memories from past events.</p>
+      </div>
+
+      <div class="events-photo-strip fade-in">
+        <div class="events-photo-strip-item">
+          <img src="images/gallery/party.jpg" alt="Guests celebrating at Super Player">
+        </div>
+        <div class="events-photo-strip-item">
+          <img src="images/gallery/claw-win.jpg" alt="Claw machine win moment">
+        </div>
+        <div class="events-photo-strip-item">
+          <img src="images/gallery/friends-haul.jpg" alt="Friends showing off their craft haul">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SECTION 6 — FINAL CTA
+       ============================================================ -->
+  <section class="section section-highlight">
+    <div class="container">
+
+      <div class="events-cta fade-in">
+        <div class="accent-line" style="margin: 0 auto var(--space-xl);"></div>
+        <h2>Want to celebrate something special?</h2>
+        <p>Birthdays, team days, friend groups, or just a reason to get together &mdash; we&rsquo;ll help you make it a real event.</p>
+        <div class="events-cta-buttons">
+          <a href="parties.html#party-form" class="btn btn-primary btn-lg">Book a Party</a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">Contact Us</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="navbar-logo">
+          <img src="images/logo/logo-full.png" alt="Super Player Logo" class="logo-img-footer">
+        </a>
+        <p>The place where you play, create, and take home something amazing. Claw machines, a creative studio, and unforgettable group experiences &mdash; all under one roof.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/superplayerarcade" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2.8a1 1 0 100 2 1 1 0 000-2z"/>
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@superplayerarcade.us?_r=1&_t=ZT-95MCGL3fWwv" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M16 2c.5 2.5 2.5 4.5 5 5v3c-1.3 0-2.6-.3-3.7-.9v6.5a6.5 6.5 0 11-6.5-6.5c.3 0 .6 0 .9.1v3.2a3.3 3.3 0 103.3 3.3V2h1z"/>
+            </svg>
+          </a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+              <path d="M22 12a10 10 0 10-11.5 9.9v-7h-2.2v-2.9h2.2V9.5c0-2.2 1.3-3.4 3.3-3.4.9 0 1.8.1 1.8.1v2h-1c-1 0-1.3.6-1.3 1.3v1.6h2.2l-.4 2.9h-1.8v7A10 10 0 0022 12z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="arcade.html">The Arcade</a>
+        <a href="studio.html">Craft Studio</a>
+        <a href="parties.html">Parties</a>
+        <a href="events.html">Events</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <a href="contact.html">Contact Us</a>
+        <a href="https://maps.app.goo.gl/hKzncqHVwgjjL14ZA" target="_blank" rel="noopener noreferrer">Get Directions</a>
+        <a href="parties.html#party-form">Group Bookings</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Along</h4>
+        <a href="https://www.instagram.com/superplayerarcade" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@superplayerarcade.us?_r=1&_t=ZT-95MCGL3fWwv" target="_blank" rel="noopener noreferrer">TikTok</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.google.com/maps/search/Super+Player+Arcade" target="_blank" rel="noopener noreferrer">Google Reviews</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Super Player Arcade. All rights reserved.</span>
+      <span>Play + Create + Take Home</span>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+
+</body>
+</html>
