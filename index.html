@@ -59,6 +59,71 @@
 
 
   <!-- ============================================================
+       GRAND OPENING POPUP MODAL
+       Hidden on load; shown via JS unless sessionStorage flag is set.
+       ============================================================ -->
+  <div class="go-overlay"
+       id="goPopupOverlay"
+       role="dialog"
+       aria-modal="true"
+       aria-labelledby="goPopupHeadline"
+       aria-describedby="goPopupDesc"
+       aria-hidden="true">
+
+    <div class="go-modal" id="goPopupModal">
+
+      <!-- Close button -->
+      <button class="go-close" id="goPopupClose" aria-label="Close announcement">&times;</button>
+
+      <!-- Decorative accent circles -->
+      <span class="go-dot go-dot-1" aria-hidden="true"></span>
+      <span class="go-dot go-dot-2" aria-hidden="true"></span>
+      <span class="go-dot go-dot-3" aria-hidden="true"></span>
+      <span class="go-sparkle go-sparkle-1" aria-hidden="true">✦</span>
+      <span class="go-sparkle go-sparkle-2" aria-hidden="true">✦</span>
+
+      <!-- LEFT — text + buttons -->
+      <div class="go-text">
+        <span class="go-location-badge">📍 Plano, TX</span>
+
+        <p class="go-eyebrow">Now in Soft Opening!</p>
+        <h2 class="go-headline" id="goPopupHeadline">Grand Opening<br>May 9th ✨</h2>
+
+        <p class="go-desc" id="goPopupDesc">Follow us on Instagram &amp; TikTok for more details, free giveaways, and opening day surprises.</p>
+
+        <div class="go-buttons">
+          <a href="https://www.instagram.com/superplayerarcade"
+             class="go-btn go-btn-ig"
+             target="_blank"
+             rel="noopener noreferrer">
+            Follow on Instagram
+          </a>
+          <a href="https://www.tiktok.com/@superplayerarcade.us?_r=1&amp;_t=ZT-95MCGL3fWwv"
+             class="go-btn go-btn-tt"
+             target="_blank"
+             rel="noopener noreferrer">
+            Follow on TikTok
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT — mascot video (upload: videos/mascot/waving-cat.mp4) -->
+      <div class="go-image" aria-hidden="true">
+        <video
+          class="popup-mascot-video"
+          autoplay
+          muted
+          loop
+          playsinline>
+          <source src="videos/mascot/waving-cat.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
+  </div><!-- /go-overlay -->
+
+
+  <!-- ============================================================
        ACT 1 — THE SPLIT HERO (50/50) — VIDEO BACKGROUNDS
        ============================================================ -->
   <section class="hero-split">

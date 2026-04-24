@@ -1542,3 +1542,268 @@ p {
     background-position: 50% center;  /* lock gradient at the warm gold mid-point */
   }
 }
+
+
+/* ============================================================
+   GRAND OPENING POPUP MODAL
+   ============================================================ */
+
+/* Overlay — dims the page, centers the card */
+.go-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(58, 42, 26, 0.62);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+
+  /* Hidden by default — JS adds .is-visible to show */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.32s ease, visibility 0.32s ease;
+}
+
+.go-overlay.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal card — warm orange-to-gold gradient, two columns */
+.go-modal {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 26px;
+  overflow: hidden;
+  background: linear-gradient(138deg, #F97E10 0%, #FFB347 42%, #FFD878 100%);
+  box-shadow:
+    0 36px 90px rgba(58, 42, 26, 0.42),
+    0 4px 12px  rgba(58, 42, 26, 0.18);
+
+  transform: scale(0.9) translateY(20px);
+  transition: transform 0.38s cubic-bezier(0.22, 0.8, 0.25, 1);
+}
+
+.go-overlay.is-visible .go-modal {
+  transform: scale(1) translateY(0);
+}
+
+/* Close button */
+.go-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(58, 42, 26, 0.14);
+  color: var(--brown-dark);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s ease;
+}
+
+.go-close:hover  { background: rgba(58, 42, 26, 0.26); }
+.go-close:focus-visible {
+  outline: 2px solid var(--brown-dark);
+  outline-offset: 2px;
+}
+
+/* Decorative circles */
+.go-dot {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.22);
+}
+.go-dot-1 { width: 90px;  height: 90px;  top: -28px;  left: -28px; }
+.go-dot-2 { width: 52px;  height: 52px;  bottom: 24px; left: 42%;  opacity: 0.16; }
+.go-dot-3 { width: 30px;  height: 30px;  top: 38%;    right: 53%;  opacity: 0.2; }
+
+/* Decorative sparkles */
+.go-sparkle {
+  position: absolute;
+  pointer-events: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.go-sparkle-1 { top: 1.6rem;  left: 46%; }
+.go-sparkle-2 { bottom: 1.4rem; left: 30%; font-size: 0.8rem; opacity: 0.45; }
+
+/* LEFT — text content */
+.go-text {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 2.25rem 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: center;
+}
+
+/* "Plano, TX" pill badge */
+.go-location-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  width: fit-content;
+  padding: 0.32rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.42);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--brown-dark);
+}
+
+/* "Now in Soft Opening!" eyebrow */
+.go-eyebrow {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(58, 42, 26, 0.72);
+}
+
+/* "Grand Opening / May 9th ✨" headline */
+.go-headline {
+  margin: 0;
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--brown-dark);
+}
+
+/* Description */
+.go-desc {
+  margin: 0.1rem 0 0.3rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.93rem;
+  line-height: 1.58;
+  color: rgba(58, 42, 26, 0.8);
+}
+
+/* Button stack */
+.go-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+}
+
+.go-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.72rem 1.5rem;
+  border-radius: 999px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.go-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(58, 42, 26, 0.22);
+}
+
+.go-btn-ig {
+  background: var(--brown-dark);
+  color: var(--warm-white);
+}
+
+.go-btn-tt {
+  background: rgba(255, 255, 255, 0.48);
+  color: var(--brown-dark);
+  border: 1.5px solid rgba(58, 42, 26, 0.18);
+}
+
+/* RIGHT — mascot video panel */
+.go-image {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2.25rem 2rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+/* Subtle float animation for the mascot */
+@keyframes mascot-float {
+  0%, 100% { transform: translateY(0px);   }
+  50%       { transform: translateY(-10px); }
+}
+
+.popup-mascot-video {
+  display: block;
+  width: 90%;
+  max-width: 240px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 36px rgba(58, 42, 26, 0.25));
+  animation: mascot-float 3.6s ease-in-out infinite;
+}
+
+/* --- Responsive ------------------------------------------------ */
+
+/* Stack to single column below 620px */
+@media (max-width: 620px) {
+  .go-modal {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    border-radius: 22px;
+  }
+
+  /* Mascot video moves above the text on mobile */
+  .go-image {
+    order: -1;
+    padding: 2rem 2rem 0.5rem;
+    background: rgba(255, 255, 255, 0.12);
+  }
+  .popup-mascot-video {
+    max-width: 130px;
+    width: 60%;
+  }
+
+  /* Text centered on mobile */
+  .go-text {
+    padding: 1.25rem 1.75rem 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .go-location-badge { align-self: center; }
+  .go-btn { width: 100%; }
+
+  .go-sparkle-1 { display: none; }
+}
+
+/* Reduced motion — skip entrance + mascot float animations */
+@media (prefers-reduced-motion: reduce) {
+  .go-overlay,
+  .go-modal { transition: none; }
+  .popup-mascot-video { animation: none; }
+}

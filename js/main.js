@@ -79,4 +79,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+  // --- GRAND OPENING POPUP ---
+  // Shows once per browser session. Uses sessionStorage so it doesn't
+  // reappear on back-navigation within the same session.
+  // Does not conflict with the mobile menu — each guards its own overflow reset.
+  const goOverlay = document.getElementById('goPopupOverlay');
+  const goClose   = document.getElementById('goPopupClose');
+
+  if (goOverlay && goClose && !sessionStorage.getItem('grandOpeningPopupClosed')) {
+
+    // Reveal the modal
+    goOverlay.setAttribute('aria-hidden', 'false');
+    goOverlay.classList.add('is-visible');
+    document.body.style.overflow = 'hidden';
+
+    // Move focus to the close button for keyboard / screen-reader users
+    goClose.focus();
+
+    const closePopup = () => {
+      goOverlay.classList.remove('is-visible');
+      goOverlay.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      sessionStorage.setItem('grandOpeningPopupClosed', '1');
+      document.removeEventListener('keydown', onKeyDown);
+    };
+
+    // Close button click
+    goClose.addEventListener('click', closePopup);
+
+    // Click on the dim overlay (not inside the card) to close
+    goOverlay.addEventListener('click', (e) => {
+      if (e.target === goOverlay) closePopup();
+    });
+
+    // ESC key to close
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') closePopup();
+    };
+    document.addEventListener('keydown', onKeyDown);
+  }
+
 });

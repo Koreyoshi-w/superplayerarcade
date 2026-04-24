@@ -374,6 +374,223 @@
 
 
 /* ============================================================
+   FEATURED EVENT — PROMO POSTER REDESIGN
+   Applies only within .featured-event-promo to avoid changing
+   other section styles.
+   ============================================================ */
+
+/* Warm gradient section background */
+.featured-event-promo {
+  background: linear-gradient(155deg, #FFF7E8 0%, #FFF1D6 55%, #FFE8BF 100%);
+}
+
+/* Give text column slightly more presence */
+.featured-event-promo .featured-event {
+  grid-template-columns: 1fr 0.95fr;
+  align-items: start;
+  gap: var(--space-3xl);
+}
+
+/* Title wrapper — relative for sparkle positioning */
+.promo-title-wrap {
+  position: relative;
+  margin-bottom: var(--space-md);
+}
+
+/* Large display title */
+.promo-title {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: var(--brown-dark);
+  margin: 0;
+}
+
+/* Floating sparkle next to the title */
+.promo-sparkle-accent {
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  font-size: 1.5rem;
+  opacity: 0.75;
+  animation: sparkle-bob 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes sparkle-bob {
+  0%, 100% { transform: translateY(0) rotate(0deg);   }
+  50%       { transform: translateY(-6px) rotate(10deg); }
+}
+
+/* Date styled as an orange-tinted badge line */
+.promo-date-badge {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--brown-dark);
+  background: rgba(255, 179, 71, 0.22);
+  border: 1.5px solid rgba(255, 179, 71, 0.45);
+  border-radius: var(--radius-pill);
+  padding: 0.4rem 1.1rem;
+  margin-bottom: var(--space-md);
+}
+
+/* Lighter description paragraph */
+.promo-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: var(--space-lg);
+}
+
+/* Benefits list — promotional highlight pills */
+.promo-benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-xl);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+}
+
+.promo-benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--brown-dark);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(169, 138, 106, 0.14);
+  border-radius: 12px;
+  padding: 0.65rem 0.9rem;
+  box-shadow: 0 2px 8px rgba(58, 42, 26, 0.07);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.promo-benefits-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(58, 42, 26, 0.12);
+}
+
+.promo-benefit-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* Poster image panel — tall card with strong shadow */
+.featured-event-poster {
+  aspect-ratio: 3 / 4;
+  border-radius: 20px;
+  box-shadow:
+    0 28px 70px rgba(58, 42, 26, 0.22),
+    0 4px 12px rgba(58, 42, 26, 0.12);
+  border: none;
+  overflow: hidden;
+  background: var(--cream-warm);
+}
+
+.featured-event-poster-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.55s ease;
+}
+
+.featured-event-poster:hover .featured-event-poster-img {
+  transform: scale(1.02);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .promo-sparkle-accent { animation: none; }
+  .featured-event-poster-img { transition: none; }
+  .promo-benefits-list li { transition: none; }
+}
+
+/* ============================================================
+   RESPONSIVE — featured-event-promo
+   ============================================================ */
+@media (max-width: 960px) {
+  .promo-benefits-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack: poster on top, text below, everything centered */
+  .featured-event-promo .featured-event {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .featured-event-poster {
+    order: -1;             /* image first on mobile */
+    aspect-ratio: 3 / 4;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .featured-event-promo .featured-event-text {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .promo-sparkle-accent {
+    position: static;
+    font-size: 1.25rem;
+  }
+
+  .promo-benefits-list {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .featured-event-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-title { font-size: 2.2rem; }
+
+  .promo-benefits-list {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+
+  .featured-event-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .featured-event-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* ============================================================
    UPCOMING EVENTS — 3-card grid
    ============================================================ */
 .events-grid {
